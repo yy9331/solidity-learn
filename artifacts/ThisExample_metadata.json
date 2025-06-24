@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getContractAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"08_MessageInfo.sol": "ThisExample"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"08_MessageInfo.sol": {
+			"keccak256": "0xea7e2c0bb0d85ec2e6a9a731e0fb6903b9925dddfd5a70f280a1ba0d801bd8f9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c0a9abb529ddb4519aa48f1bec62feaf5fbc23f5107b2c1da85a38dd451a9674",
+				"dweb:/ipfs/QmPpTgENzCYzX4Q1fEnPXinf3tUAR1z4Subx3uLYgp2uzD"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,141 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "newVal",
+						"type": "uint256[]"
+					}
+				],
+				"name": "ValUpdate",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "foo",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DataLocation.MyStruct",
+						"name": "_myStruct",
+						"type": "tuple"
+					}
+				],
+				"name": "f",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "foo",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DataLocation.MyStruct",
+						"name": "_myStruct",
+						"type": "tuple"
+					}
+				],
+				"name": "g",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myStruct",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "foo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"15_Data_Location.sol": "DataLocation"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"15_Data_Location.sol": {
+			"keccak256": "0x2579ed78353d9b27e5e5d430e21969a540817c0d0e9272f3d9cbbc795dc8515d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a07848ac5959ef581bc42a3cce69cf16b0de22d0fb73d51c251a0d0b05f68a5",
+				"dweb:/ipfs/QmXfPxpeqHjfSjf1aSZrKaEC3WELpBBYb45GTBjgDyEEwC"
+			]
+		}
+	},
+	"version": 1
+}

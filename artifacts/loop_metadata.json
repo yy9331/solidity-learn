@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "forLoop",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "forLoop1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"05_loop.sol": "loop"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"05_loop.sol": {
+			"keccak256": "0xd7137e35bc3abc5813db51d48f80e32c65bff733202d62bce7656fde9779ae7a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8106a22c5b6fce8c6c29ff2054f0f79edfee238eeff2576d5c4475cb09b7e1b7",
+				"dweb:/ipfs/QmSkfxPg2qUV1g5VoNmrGEd1Y7ftTQziirhVXz1FxPZb58"
+			]
+		}
+	},
+	"version": 1
+}

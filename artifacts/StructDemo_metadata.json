@@ -1,0 +1,183 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "label",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "value",
+										"type": "string"
+									}
+								],
+								"internalType": "struct StructDemo.Hobbie[]",
+								"name": "hobbies",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct StructDemo.Person",
+						"name": "p",
+						"type": "tuple"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "personMap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "persons",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "label",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "value",
+										"type": "string"
+									}
+								],
+								"internalType": "struct StructDemo.Hobbie[]",
+								"name": "hobbies",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct StructDemo.Person",
+						"name": "p",
+						"type": "tuple"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setPersonMap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"07_struct_02.sol": "StructDemo"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"07_struct_02.sol": {
+			"keccak256": "0x38b1472765c42f0e9a59dcbce630da9f04e8d4492caafb2484f1fb7038eeac9f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://72f201e5f342b149ce0898662eb8eb2363dc99efb39f6df4c90324feeea4a63d",
+				"dweb:/ipfs/QmaBSps1WV6xWNTdXxvm7hbThfwhi1pu8E6tBE4qrxetxZ"
+			]
+		}
+	},
+	"version": 1
+}
