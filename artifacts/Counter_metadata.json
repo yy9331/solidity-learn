@@ -7,32 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "counter",
+				"name": "count",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "int256",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "decrement",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -59,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"01_counter.sol": "Counter"
+			"20_interface.sol": "Counter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -73,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"01_counter.sol": {
-			"keccak256": "0xc4f69ef25eac2a9d56f7306f7b43f3409a82aafd3392b2ed4fd73e460fb417dc",
+		"20_interface.sol": {
+			"keccak256": "0xad8dcf107e4c5934539dea61571946138ae693b91ea6ff2e33fa0551e2db992d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3a378886a862c67daf0d06b99b58c4454aee02a302104b426cd984d1fc09802",
-				"dweb:/ipfs/QmedjUxE3CMk9jpgYUYYh61cDSPwDokrVYTzesYEVzKV9R"
+				"bzz-raw://5ee4b9d64172290d617167b68dfb4b19020a9026ab2529c3ba77ed262618b6b7",
+				"dweb:/ipfs/QmZnVbzJ5ZFWsffW6zDMYRDp8sAdrAHStbWCkqJJMQs8fG"
 			]
 		}
 	},
