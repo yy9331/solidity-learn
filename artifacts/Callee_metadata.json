@@ -12,7 +12,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "msgSender",
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -24,8 +24,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "txOrigin",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -33,7 +39,31 @@
 						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwnerAndSendEth",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -50,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"08_global_var.sol": "Callee"
+			"23_CallContract.sol": "Callee"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -64,12 +94,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"08_global_var.sol": {
-			"keccak256": "0xe7c119fd82d465ea3cb331d55e1a91782e1d6fe1f8cff2f0880922fa178693c9",
+		"23_CallContract.sol": {
+			"keccak256": "0xda42f6ecccbcac099acb8f5e8bf7e3f9382c68c047963c996077d2e95c4f5241",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://40a8989e674b4828d1bfe15336f22bb21fdfa237c550cb01dbffc7e4f425af43",
-				"dweb:/ipfs/QmRgJerZCTwrr44SJfX4T4cQpKtCWzZGHqc5dc4Djqu7QA"
+				"bzz-raw://2ecc10d6e66305912e86d4100727407215a2f4493aa68724a530f2497008a216",
+				"dweb:/ipfs/QmUqwAnLwpHD5Ffe6aBQ6RS2gj5qh4LwRvP3aPWmdZ3TN5"
 			]
 		}
 	},
