@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_txt",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_otherTxt",
+						"type": "string"
+					}
+				],
+				"name": "collision",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_txt",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_otherTxt",
+						"type": "string"
+					}
+				],
+				"name": "notClilision",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "usePacked",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"28_Keccak256.sol": "Keccak256"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"28_Keccak256.sol": {
+			"keccak256": "0x238532201726d67814d42ac09f22f6e80b8b44caea9d99c3f7a24e7dff09d5c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50dfa45ca52c9a7ded6166200582d91826d993519583018f878c797fcce924c7",
+				"dweb:/ipfs/QmSU1GGwhB6aG4pzKmWezoZHxN4LoioGizqfuK4igqnYa2"
+			]
+		}
+	},
+	"version": 1
+}

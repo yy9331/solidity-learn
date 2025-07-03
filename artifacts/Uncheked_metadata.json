@@ -1,0 +1,142 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					}
+				],
+				"name": "sub1",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					}
+				],
+				"name": "sub2",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					}
+				],
+				"name": "sum1",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					}
+				],
+				"name": "sum2",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"29_Unchecked.sol": "Uncheked"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"29_Unchecked.sol": {
+			"keccak256": "0xb7eb7e712373e56dc5192729cef18eb1641749e605614a57ae6fd07509928dde",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4f919004919737fde9e0163ccf2869bd8f7dae42267b20dc43d875dde00d2cd7",
+				"dweb:/ipfs/QmWfPott2Zv4mBSTfBZEaJKFQYNGjJZr3qUw7UEt7aVUcx"
+			]
+		}
+	},
+	"version": 1
+}

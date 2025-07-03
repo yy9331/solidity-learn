@@ -9,20 +9,20 @@
 				"inputs": [
 					{
 						"internalType": "bytes",
-						"name": "encodeData",
+						"name": "data",
 						"type": "bytes"
 					}
 				],
 				"name": "decodeData",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "text",
-						"type": "string"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "number",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -32,23 +32,90 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "text",
-						"type": "string"
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "number",
+						"name": "_val",
 						"type": "uint256"
 					}
 				],
-				"name": "encodeData",
+				"name": "getEncode",
 				"outputs": [
 					{
 						"internalType": "bytes",
 						"name": "",
 						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					},
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "getEncodePacked",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "getEncodeWithSelector",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "getEncodeWithSignature",
+				"outputs": [
 					{
 						"internalType": "bytes",
 						"name": "",
@@ -72,7 +139,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"09_abi.sol": "Abi"
+			"27_Abi.sol": "Abi"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -86,12 +153,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"09_abi.sol": {
-			"keccak256": "0xd0493bd8e12d109a97c94816a41792929d2ee7a2c1ef2d7f5cfdf88bb7a2342e",
+		"27_Abi.sol": {
+			"keccak256": "0xdb14ecd8783181bcfc690f83ae78079332f8586f6c5140defd7da124c79275a2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7e58c7638ae9002f08114a8e919cafe4125bfa4b1db12e8fa3af84ab85ef2575",
-				"dweb:/ipfs/QmXZBoAnPzxoMCSonsmAQcjAHX1YFrkGwLRwwtBKkjAy8i"
+				"bzz-raw://a737a525e4e92ec38a6c2a095cec3975af4f03d373ea01053a68808ad0618485",
+				"dweb:/ipfs/QmSfmzFF9Crm8f85hwagZJD1GhRA4QJcutyWFGdFFcpxXL"
 			]
 		}
 	},
