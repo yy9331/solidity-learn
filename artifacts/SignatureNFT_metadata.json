@@ -190,19 +190,6 @@
 				"inputs": [
 					{
 						"indexed": true,
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					}
-				],
-				"name": "MetadataUpdated",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
 						"internalType": "address",
 						"name": "previousOwner",
 						"type": "address"
@@ -299,19 +286,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "contractURI",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -325,6 +299,25 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasMinted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -551,32 +544,6 @@
 					}
 				],
 				"name": "setApprovalForAll",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "baseURI",
-						"type": "string"
-					}
-				],
-				"name": "setBaseURI",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_contractURIParam",
-						"type": "string"
-					}
-				],
-				"name": "setContractURI",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -867,7 +834,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"CM_ERC721.sol": "CM"
+			"SignatureNFT.sol": "SignatureNFT"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -1009,12 +976,12 @@
 				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
 			]
 		},
-		"CM_ERC721.sol": {
-			"keccak256": "0xe000d240619c0f42fbd66b40e82c3a5104411a9712279dd43a28c2d1850547e7",
+		"SignatureNFT.sol": {
+			"keccak256": "0xad9c020da0f5ee78e01386142ab853bd39b086815725175cf29ed3e6471f86e4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://478abd0dd3a944f838109cbf7624dbc5b2fe49efe56fc2d58d32b63948fd417a",
-				"dweb:/ipfs/QmVkyJrvsk84mrwzR1ueBpNLKEA8EEUSh2f1xaRqjEg2Wn"
+				"bzz-raw://47e02b33838f5454000243ff4837fccc1c72e49f059fe51b17109390897b2005",
+				"dweb:/ipfs/QmakQurkurGpF7XbSUH2WesX3QcduhjenuLWbn6GvknxWL"
 			]
 		}
 	},

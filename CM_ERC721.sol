@@ -29,20 +29,43 @@ contract CM is ERC721, Ownable {
         _baseTokenURI = "";
         _contractURI = "";
     }
-    
-    // 铸造函数
-    function mint() public payable {
+
+    // 铸造函数 - 带签名验证和白名单
+    function mint(address account, uint256 tokenId, bytes calldata signature) public payable {
         require(_tokenIds.current() < maxSupply, "Max supply reached");
         require(msg.value >= mintPrice, "Insufficient payment");
-        
+        require(tokenId == 0, "Only tokenId 0 is allowed");
+
+        bytes32 messageHash = keccak256(abi.encodePacked(account, tokenId));
+        bytes32 ethSignedMessageHash = keccak256(abi.encodePacked("\x19Ethereum Signed Message:\n32", messageHash));
+
+        (uint8 v, bytes32 r, bytes32 s) = splitSignature(signature);
+        address signer = ecrecover(ethSignedMessageHash, v, r, s);
+
+        require(signer == owner(), "Invalid signature");
+        require(account == msg.sender, "Can only mint to self");
+
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();
-        
         _safeMint(msg.sender, newTokenId);
-        
+
         emit TokenMinted(msg.sender, newTokenId);
     }
     
+    function splitSignature(bytes memory sig)
+        internal
+        pure
+        returns (uint8 v, bytes32 r, bytes32 s)
+    {
+        require(sig.length == 65, "invalid signature length");
+
+        assembly {
+            r := mload(add(sig, 32))
+            s := mload(add(sig, 64))
+            v := byte(0, mload(add(sig, 96)))
+        }
+    }
+
     // 批量铸造（仅所有者）
     function mintBatch(address to, uint256 quantity) public onlyOwner {
         require(_tokenIds.current() + quantity <= maxSupply, "Exceeds max supply");
